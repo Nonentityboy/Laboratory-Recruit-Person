@@ -1,0 +1,159 @@
+<!DOCTYPE HTML><html>
+<head>
+	<title>2018-EPI实验室秋季纳新</title>
+  <link rel="shortcut icon"  href="about/images/icon.png" media="screen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<script src="index/js/skel.min.js"></script>
+	<script src="index/js/init.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<noscript>
+ 	<link rel="stylesheet" href="index/css/skel.css">
+  	<link rel="stylesheet" href="index/css/style.css">
+  	<link rel="stylesheet" href="index/css/style-wide.css">
+  	<link rel="stylesheet" href="index/css/style-noscript.css">
+	</noscript>
+  <style>
+    /*body { background: #000;}*/
+    </style>
+</head>
+<body class="loading">
+  	<div id="wrapper">
+    	<div id="bg"></div>
+    	<div id="overlay"></div>
+      	<div id="main">
+      		<header id="header">
+      			<h2 class="load-text">Hello,friend.</h2>
+            <!-- <h2 class="load-text2">We are EPI Laboratory.</h2> -->
+<!--             <h2 class="load-text">We are EPI Laboratory.</h2>
+ -->     				<p></p>
+      			<nav>
+              <ul>
+                <li>
+                  <a>
+                    <!-- href="https://nonentityboy.github.io/" target="_blank" class="fa fa-list" -->
+                    <span>我们是对技术的狂热少年</span>
+                    <!-- <span>Blog</span> -->
+                  </a>
+                </li>
+                <br>
+                <li>
+                  <a>
+                    <!-- href="https://github.com/Nonentityboy" target="_blank" class="fa fa-github" -->
+                    <!-- <span>Github</span> -->
+                    <span>我们是技术的最忠实信徒</span>
+                  </a>
+                </li>
+                <br>
+                <li>
+                  <a>
+                    <!-- href="https://github.com/Nonentityboy" target="_blank" class="fa fa-github" -->
+                    <!-- <span>Github</span> -->
+                    <span>我们要做电子信息类人才的最强王者！</span>
+                  </a>
+                </li>
+                <br>
+                <li>
+                  <a>
+                    <!-- href="about/aboutme.html" target="_blank" class="fa fa-user" -->
+                    <span class="demo4">Enthusiastic, Practice and Insist are our source of power. <br>We are EPI Laboratory.</span>
+                    <!-- <span>AboutMe</span> -->
+                  </a>
+                </li>
+                <br>
+                <li style="padding: 1em 0 0 0;">
+                  <a>
+                    <!-- <span>Email</span> -->
+                    <!-- href="mailto:1138580559@qq.com" class="fa fa-envelope-o" -->
+                    <span><a href="Hardware/Hardware.html">了解硬件部</a> | | <a href="Software/Software.html">了解软件部</a> </span>
+                  </a>
+                </li>
+                <br>
+                <li style="padding: 1em 0 0 0;">
+                  <a>
+                    <!-- <span>Email</span> -->
+                    <!-- href="mailto:1138580559@qq.com" class="fa fa-envelope-o" -->
+                    <span><a style="font-size: 0.8em;" href="https://www.wjx.top/jq/27899444.aspx">=====报名入口=====</a></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <footer id="footer">
+            <span class="copyright" style="color: #fff;">
+              &copy; Powered by EPI Software Group
+             </span>
+          </footer>
+        </div>
+  </div>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/dist/animatext.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+  <script src="ThreeCanvas.js"></script>
+<script src="Snow.js"></script>
+<script>
+!function(){
+  init();
+}();
+</script>
+<script type="text/javascript">
+  $(".demo4").animatext({speed: 150,
+    effect: 'bounceIn',
+    reverse: false,
+    infinite: true
+  });
+  $('.animateTitle1').animatext({
+    speed: 300,
+    effect: 'flipInY',
+    reverse: false
+    });
+</script>
+<!-- <script type="text/javascript">
+//    窗口大小
+    var oPageX=window.screen.width;
+    var oPageY=window.screen.height;
+    var aSnow=[];
+//    雪花模板
+    function snow(x,y,xspeed,yspeed,xsin,size){//x水平位置,y垂直位置,xspeed水平步距,yspeed垂直步距,xsin振幅,size雪花大小
+        this.node=document.createElement('div');
+        this.x=x;
+        this.y=y;
+        this.xspeed=xspeed;
+        this.yspeed=yspeed;
+        this.xsin=xsin;
+        this.size=size;
+        this.createSnow=function(){
+            this.node.style.position='absolute';
+            this.node.style.top=this.y+'px';
+            this.node.style.left=this.x+'px';
+            this.node.innerHTML='*';
+            document.body.appendChild(this.node);
+        };
+        this.createSnow();
+        this.snowMove=function(){
+            this.node.style.top=parseInt(this.node.style.top)+this.yspeed+'px';//垂直方向运动
+            this.node.style.left=parseInt(this.node.style.left)+this.xsin*Math.sin(this.xspeed)+'px';
+            this.node.style.fontSize=this.size+'px';
+//            this.node.style.color='rgb('+Math.ceil(Math.random()*255)+','+Math.ceil(Math.random()*255)+','+Math.ceil(Math.random()*255)+')';
+        };
+    }
+//    创建雪花
+    function createSnow(){
+        aSnow.push(new snow(Math.random()*oPageX,-50,0.02+Math.random()/10,1+Math.random(),Math.random()*30,20+Math.random()*30));
+    }
+    setInterval(createSnow,1000);//一秒钟创建一个雪花
+//    雪花移动函数
+    function snowMove(){
+        for(var j=0;j<aSnow.length;j++){
+            aSnow[j].snowMove();
+            if(parseInt(aSnow[j].node.style.top)>oPageY || parseInt(aSnow[j].node.style.left)>oPageX){
+                aSnow[j].node.parentNode.removeChild(aSnow[j].node);
+                aSnow.splice(j,1);
+            }
+        }
+    }
+    setInterval(snowMove,30);
+</script> -->
+</body>
+</html>
